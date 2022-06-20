@@ -1,0 +1,29 @@
+{
+    "footerAboutWidget": {
+        "logoSrc": "/images/logo/ihumane-white-long.png",
+        "telephone": "(+234) 901-640-0000",
+        "email": "info@ihumane.net",
+        "fbUrl": "https://www.facebook.com/",
+        "twitterUrl": "https://twitter.com/",
+        "instagramUrl": "https://www.instagram.com/"
+    },
+    "footerLinkTitleOne": "Quick Links",
+    "navListOne": [
+        {
+            "navTitle": "Product",
+            "navUrl": "/"
+        },
+        {
+            "navTitle": "Pricing",
+            "navUrl": "/"
+        },
+        {
+            "navTitle": "Contact Us",
+            "navUrl": "/"
+        },
+        {
+            "navTitle": "Help Center",
+            "navUrl": "/"
+        }
+    ]
+}
