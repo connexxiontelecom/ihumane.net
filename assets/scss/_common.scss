@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: $body-font;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font;
+    font-family: 'Rubik', sans-serif;
     font-weight: 700;
     line-height: 1.3;
     margin-top: 0;
@@ -172,7 +172,7 @@ $color in $theme-colors {
         bottom: 0;
         left: 0;
         z-index: -1;
-        background: linear-gradient(to right,  rgba(3,15,39,0.7) 0%,rgba(3,15,39,0) 100%); 
+        background: linear-gradient(to right,  rgba(3,15,39,0.7) 0%,rgba(3,15,39,0) 100%);
     }
 }
 
@@ -230,7 +230,7 @@ input:not([type=submit]):not([type=file]) {
             z-index: 1;
             transition: $transition;
         }
-    
+
         &:hover{
             &:before{
                 width: 12px;
@@ -240,7 +240,7 @@ input:not([type=submit]):not([type=file]) {
             }
         }
     }
-      
+
     .swiper-pagination-bullet-active{
         &:before{
             width: 12px;
@@ -250,7 +250,7 @@ input:not([type=submit]):not([type=file]) {
         }
     }
 }
-  
+
 .swiper-pagination.swiper-pagination-white  {
     & .swiper-pagination-bullet {
         margin: 8px;
@@ -271,7 +271,7 @@ input:not([type=submit]):not([type=file]) {
         box-shadow: 0 0 9px #ededed;
     }
 }
-  
+
 .swiper-nav-button {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), visibility 0.1s linear 2s, opacity 0.1s linear 2s;
     background-image: none;
@@ -403,18 +403,18 @@ input:not([type=submit]):not([type=file]) {
     animation: fade-out .1s;
 }
 @keyframes fade-in {
-    0% { 
-        opacity: 0; 
+    0% {
+        opacity: 0;
     }
-    100% { 
-        opacity: 1; 
+    100% {
+        opacity: 1;
     }
 }
 @keyframes fade-out {
-    0% { 
-        opacity: 1; 
+    0% {
+        opacity: 1;
     }
-    100% { 
-        opacity: 0; 
+    100% {
+        opacity: 0;
     }
 }

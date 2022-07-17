@@ -6,3 +6,7 @@ node_modules
 # System files
 *.log
 .idea
+
+*.zip
+/dist
+.DS_Store

@@ -1,68 +1,64 @@
 export default {
+  generate: {
+    fallback: true,
+  },
 
-    generate: {
-        fallback: true
-    },
-
-    // Global page headers (https://go.nuxtjs.dev/config-head)
-    head: {
-        title: 'IHUMANE',
-        titleTemplate: '%s - IHUMANE',
-        meta: [
-            { charset: 'utf-8' },
-            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' }
-        ],
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/ihumane-green-short.svg' },
-        ],
-
-    },
-
-    // Global CSS (https://go.nuxtjs.dev/config-css)
-    css: [
-        'assets/scss/style.scss'
+  // Global page headers (https://go.nuxtjs.dev/config-head)
+  head: {
+    title: "IHUMANE",
+    titleTemplate: "%s - IHUMANE",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
     ],
-
-    // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-    plugins: [
-        '~/plugins/vue-awesome-swiper.js',
-        '~/plugins/silentbox.js',
-        '~/plugins/vuejs-paginate.js',
-        '~/plugins/Mixitup.client.js',
-        {
-            src: "~/plugins/aos",
-            ssr: false
-        },
-        {
-            src: "~/plugins/typed.js",
-            ssr: true
-        }
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/ihumane-green-short.svg" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Rubik&display=swap",
+      },
     ],
+  },
 
-    // Auto import components (https://go.nuxtjs.dev/config-components)
-    components: true,
+  // Global CSS (https://go.nuxtjs.dev/config-css)
+  css: ["assets/scss/style.scss"],
 
-    // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-    buildModules: [
-    ],
-
-    // Modules (https://go.nuxtjs.dev/config-modules)
-    modules: [
-        // https://go.nuxtjs.dev/bootstrap
-        'bootstrap-vue/nuxt',
-        '@nuxtjs/style-resources',
-    ],
-
-    styleResources: {
-        scss: [
-            '~/assets/scss/_variables.scss',
-        ]
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  plugins: [
+    "~/plugins/vue-awesome-swiper.js",
+    "~/plugins/silentbox.js",
+    "~/plugins/vuejs-paginate.js",
+    "~/plugins/Mixitup.client.js",
+    {
+      src: "~/plugins/aos",
+      ssr: false,
     },
-
-    // Build Configuration (https://go.nuxtjs.dev/config-build)
-    build: {
-        extend (config, ctx) {
-        },
+    {
+      src: "~/plugins/typed.js",
+      ssr: true,
     },
-}
+  ],
+
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [],
+
+  // Modules (https://go.nuxtjs.dev/config-modules)
+  modules: [
+    // https://go.nuxtjs.dev/bootstrap
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/style-resources",
+  ],
+
+  styleResources: {
+    scss: ["~/assets/scss/_variables.scss"],
+  },
+
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  build: {
+    extend(config, ctx) {},
+  },
+};

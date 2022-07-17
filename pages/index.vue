@@ -1,53 +1,49 @@
 <template>
-    <div class="main-container">
+  <div class="main-container">
+    <TheHeader />
 
-        <TheHeader />
+    <OffCanvasMobileMenu />
 
-        <OffCanvasMobileMenu />
+    <HeroSliderTwo />
 
-        <HeroSliderTwo />
+    <AboutTwo />
 
-        <AboutTwo />
+    <FeatureOne :style="{ backgroundColor: '#f8faff' }" />
 
-        <FeatureOne :style="{backgroundColor: '#f8faff'}" />
+    <SkillWithVideo />
 
-        <SkillWithVideo />
+    <ContactSectionOne :style="{ backgroundColor: '#f8faff' }" />
 
-        <ContactSectionOne :style="{backgroundColor: '#f8faff'}" />
-
-        <TheFooter />
-
-    </div>
+    <TheFooter />
+  </div>
 </template>
 
 <script>
-    export default {
-        components: {
-            TheHeader: () => import('@/components/TheHeader'),
-            OffCanvasMobileMenu: () => import('@/components/OffCanvasMobileMenu'),
-            SearchPopup: () => import('@/components/SearchPopup'),
-            HeroSliderOne: () => import('@/components/HeroSliderOne'),
-          HeroSliderTwo: () => import('@/components/HeroSliderTwo'),
-          AboutOne: () => import('@/components/AboutOne'),
-          AboutTwo: () => import('@/components/AboutTwo'),
-          FeatureOne: () => import('@/components/FeatureOne'),
-          SkillWithVideo: () => import('@/components/SkillWithVideo'),
-          SuccessStory: () => import('@/components/SuccessStory'),
-            PortfolioGallery: () => import('@/components/PortfolioGallery'),
-            BlogSectionOne: () => import('@/components/BlogSectionOne'),
-            Newsletter: () => import('@/components/Newsletter'),
-            CallToActionOne: () => import('@/components/CallToActionOne'),
-          ContactSectionOne: () => import('@/components/ContactSectionOne'),
+export default {
+  components: {
+    TheHeader: () => import("@/components/TheHeader"),
+    OffCanvasMobileMenu: () => import("@/components/OffCanvasMobileMenu"),
+    SearchPopup: () => import("@/components/SearchPopup"),
+    HeroSliderOne: () => import("@/components/HeroSliderOne"),
+    HeroSliderTwo: () => import("@/components/HeroSliderTwo"),
+    AboutOne: () => import("@/components/AboutOne"),
+    AboutTwo: () => import("@/components/AboutTwo"),
+    FeatureOne: () => import("@/components/FeatureOne"),
+    SkillWithVideo: () => import("@/components/SkillWithVideo"),
+    SuccessStory: () => import("@/components/SuccessStory"),
+    PortfolioGallery: () => import("@/components/PortfolioGallery"),
+    BlogSectionOne: () => import("@/components/BlogSectionOne"),
+    Newsletter: () => import("@/components/Newsletter"),
+    CallToActionOne: () => import("@/components/CallToActionOne"),
+    ContactSectionOne: () => import("@/components/ContactSectionOne"),
 
-          TheFooter: () => import('@/components/TheFooter'),
-        },
+    TheFooter: () => import("@/components/TheFooter"),
+  },
 
-        head() {
-            return {
-                title: 'Home'
-            }
-        },
+  head() {
+    return {
+      title: "Home",
     };
+  },
+};
 </script>
-
-
