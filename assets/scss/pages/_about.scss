@@ -68,7 +68,7 @@
         & .shape {
             position: absolute;
             z-index: -1;
-    
+
             &-1 {
                 right: 0;
                 top: 50px;
@@ -86,7 +86,7 @@
     &.about-two {
         @media #{$tablet-device, $large-mobile}{
             margin-top: 50px;
-        } 
+        }
     }
 }
 
